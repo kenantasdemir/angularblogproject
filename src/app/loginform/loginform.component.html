@@ -1,0 +1,24 @@
+<div class="container d-flex justify-content-center align-items-center">
+    <form action="" class="form-group w-50">
+        <input type="email" placeholder="Email adresinizi giriniz.." class="form-control mt-3">
+
+      
+
+       
+       <div class="input-group">
+            <input [type]="showPassword ? 'text' : 'password'" placeholder="Şifrenizi giriniz..." class="form-control mt-3">
+            <button type="button" class="btn btn-secondary mt-3" (click)="togglePasswordVisibility()">
+                <i class="bi bi-eye-fill" *ngIf="!showPassword"></i>
+                <i class="bi bi-eye-slash-fill" *ngIf="showPassword"></i>
+              </button>
+       </div>
+     
+      
+        
+
+        <div class="btn-group d-flex flex-column">
+            <a href="/login" style="border-radius: 30px;" type="button" class="btn btn-success mt-3">Giriş Yap</a>
+            <a href="/register" style="border-radius: 30px;" type="button" class="btn btn-primary mt-3">Kayıt Ol </a>
+        </div>
+    </form>
+</div>
